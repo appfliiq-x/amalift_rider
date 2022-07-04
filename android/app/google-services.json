@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "468766507915",
+    "firebase_url": "https://amalift-pro-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "amalift-pro",
+    "storage_bucket": "amalift-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468766507915:android:ff58848b8654009f01258e",
+        "android_client_info": {
+          "package_name": "com.amalift.rider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468766507915-2f5i2dmh1i3n8dth9jcvq8q9jqljtsco.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amalift.rider",
+            "certificate_hash": "0e8eed35558c5c21f836965ee982d87de808cf39"
+          }
+        },
+        {
+          "client_id": "468766507915-qmqjc25she6o35g5p8bp3d57l6grn4d5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amalift.rider",
+            "certificate_hash": "5d92d97c8da17f21c004808ae6213c9e0627425a"
+          }
+        },
+        {
+          "client_id": "468766507915-1ias88bbosuap0tchp68t66usg6aj3ag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_clIROhulq-7ZR1ZfSDG8qwhwVHarE4E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468766507915-1ias88bbosuap0tchp68t66usg6aj3ag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
