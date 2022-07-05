@@ -1,4 +1,4 @@
-import UIKit
+AIzaSyCgAtgTb8Fw-hf7wtSprJeq9G01LqqRA14import UIKit
 import Flutter
 import GoogleMaps
 import Firebase
@@ -10,7 +10,7 @@ import Firebase
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     FirebaseApp.configure()
-    GMSServices.provideAPIKey("map key")
+    GMSServices.provideAPIKey("AIzaSyCgAtgTb8Fw-hf7wtSprJeq9G01LqqRA14")
     GeneratedPluginRegistrant.register(with: self)
     if #available(iOS 10.0, *) { 
      UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
