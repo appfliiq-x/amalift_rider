@@ -1,4 +1,4 @@
-AIzaSyCgAtgTb8Fw-hf7wtSprJeq9G01LqqRA14import UIKit
+import UIKit
 import Flutter
 import GoogleMaps
 import Firebase
