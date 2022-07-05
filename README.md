@@ -1,4 +1,4 @@
-# tagyourtaxi_driver
+# amalift rider app
 
 A new Flutter project.
 
