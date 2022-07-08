@@ -445,7 +445,7 @@ class _MapsState extends State<Maps> with WidgetsBindingObserver {
                                                         }
                                                         setState(() {
                                                           state = '3';
-                                                          _loading = true;
+                                                          _loading = false;
                                                         });
                                                         
                                                       },
