@@ -423,7 +423,33 @@ class _MapsState extends State<Maps> with WidgetsBindingObserver {
                                                       },
                                                       text: languages[
                                                               choosenLanguage]
-                                                          ['text_allow']))
+                                                          ['text_allow'])),
+                                              Container(
+                                                  padding: EdgeInsets.all(
+                                                      media.width * 0.05),
+                                                  child: Button(
+                                                      onTap: () async {
+                                                        if (serviceEnabled ==
+                                                            false) {
+                                                          await location
+                                                              .requestService();
+                                                        }
+                                                        if (permission ==
+                                                                PermissionStatus
+                                                                    .denied ||
+                                                            permission ==
+                                                                PermissionStatus
+                                                                    .deniedForever) {
+                                                          await location
+                                                              .requestPermission();
+                                                        }
+                                                        setState(() {
+                                                          state = '3';
+                                                          _loading = true;
+                                                        });
+                                                        
+                                                      },
+                                                      text: "Pick Manually"))
                                             ],
                                           ),
                                         )
