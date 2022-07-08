@@ -14,6 +14,9 @@ import 'package:tagyourtaxi_driver/pages/NavigatorPages/walletpage.dart';
 import 'package:tagyourtaxi_driver/pages/onTripPage/map_page.dart';
 import 'package:tagyourtaxi_driver/styles/styles.dart';
 import 'package:tagyourtaxi_driver/translations/translation.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+import '../login/login.dart';
 
 class NavDrawer extends StatefulWidget {
   const NavDrawer({Key? key}) : super(key: key);
@@ -503,7 +506,45 @@ class _NavDrawerState extends State<NavDrawer> {
                                   ],
                                 ),
                               ),
-                            )
+                            ),
+                            InkWell(
+                              onTap: () async {
+                                // ignore: await_only_futures
+                                User user =
+                                    await FirebaseAuth.instance.currentUser!;
+                                await user.delete();
+
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const Login()));
+                              },
+                              child: Container(
+                                padding: EdgeInsets.all(media.width * 0.025),
+                                child: Row(
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/logout.png',
+                                      fit: BoxFit.contain,
+                                      width: media.width * 0.075,
+                                    ),
+                                    SizedBox(
+                                      width: media.width * 0.025,
+                                    ),
+                                    SizedBox(
+                                      width: media.width * 0.5,
+                                      child: Text(
+                                        "Delete Account",
+                                        overflow: TextOverflow.ellipsis,
+                                        style: GoogleFonts.roboto(
+                                            fontSize: media.width * sixteen,
+                                            color: textColor),
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
                           ],
                         ),
                       )
