@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tagyourtaxi_driver/functions/functions.dart';
 import 'package:tagyourtaxi_driver/pages/loadingPage/loading.dart';
+import 'package:tagyourtaxi_driver/pages/login/login.dart';
 import 'package:tagyourtaxi_driver/pages/noInternet/nointernet.dart';
 import 'package:tagyourtaxi_driver/styles/styles.dart';
 import 'package:image_picker/image_picker.dart';
@@ -235,7 +236,18 @@ class _EditProfileState extends State<EditProfile> {
                               _isLoading = false;
                             });
                           },
-                          text: languages[choosenLanguage]['text_confirm']))
+                          text: languages[choosenLanguage]['text_confirm'])),
+                  const SizedBox(height: 30),
+                  SizedBox(
+                      width: media.width * 0.8,
+                      child: Button(
+                          onTap: () async {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const Login()));
+                          },
+                          text: "Delete Account"))
                 ],
               ),
             ),
